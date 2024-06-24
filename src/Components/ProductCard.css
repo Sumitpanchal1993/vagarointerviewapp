@@ -1,0 +1,18 @@
+.prdCardBase{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between; 
+ box-shadow: 0 0 5px grey;
+ border-radius: 1rem;
+ min-width: 15rem;
+ max-width: 15rem;
+ min-height: 20rem;
+ padding: 0.5rem;
+}
+
+
+img{
+    width: 12rem;
+    max-height: 10rem;
+}

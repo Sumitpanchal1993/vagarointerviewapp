@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(10, 90, 128);
+    padding: 0.3rem 1rem;
+}
+
+
+.logo{
+    text-align: center;
+}
+
+.logo img{
+    width: 3rem;
+}
+
+
+.search input{
+    padding:0.4rem  1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: medium;
+    text-transform: lowercase;
+
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;    
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+}
+.options span{
+    padding: 0.8rem;    
+    border-radius: 1rem;
+}
+
+.options span:hover{
+    background: green;
+}
