@@ -11,6 +11,7 @@ function CartItem({item}) {
       </div>
 
       <div className="prdDetail">
+        <h4>{item.title}</h4>
         {/* <p>Detail of the Product like companty Brand etc</p> */}
         <p>Seller Detail</p>
         {/* <div className="selection">          
@@ -27,7 +28,7 @@ function CartItem({item}) {
         </div> */}
         <div className="itemPrice">
           <span>
-            <strong>{item.price}</strong>
+            <strong>₹{item.price}</strong>
           </span>
         
        

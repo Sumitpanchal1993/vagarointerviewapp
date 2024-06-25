@@ -5,10 +5,11 @@ import "./Bill.css";
 
 function Bill({totalMRP, count}) {
 
-  const platformFees = 100
-  const shippingFees = 100
-  const discount = 10
-  let total = totalMRP-(totalMRP*discount/100)+ platformFees + shippingFees
+  const platformFees = 15
+  const shippingFees = 15
+  const discountpercent = 10
+  const discount = (totalMRP*discountpercent/100).toFixed(2)
+  let total = eval (totalMRP-(totalMRP*discountpercent/100)+ platformFees + shippingFees)
   return (
     <>
       <div className="billBase">
@@ -22,11 +23,11 @@ function Bill({totalMRP, count}) {
         <hr />
         <div className="amount">
           <span>Total MRP</span>
-          <span>₹{totalMRP}</span>
+          <span>₹{totalMRP.toFixed(2)}</span>
         </div>
         <div className="amount">
           <span>Discount on MRP</span>
-          <span>₹{(totalMRP*discount/100)}</span>
+          <span>₹{discount}</span>
         </div>
         
         <div className="amount">
@@ -40,7 +41,7 @@ function Bill({totalMRP, count}) {
         <hr />
         <div className="amount">
           <span>Total Amount to Pay</span>
-          <span>₹{total}</span>
+          <span>₹{total.toFixed(2)}</span>
         </div>
        
         <div>

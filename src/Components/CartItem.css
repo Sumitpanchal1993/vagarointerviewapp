@@ -1,16 +1,17 @@
 .cartItemBase {
   display: flex;
-  margin: 0.8rem 0.1rem;
+  /* margin: 0.8rem 0.1rem; */
   align-items: center;
   background: white;
   padding: 0.5rem;
   border-radius: 1rem;
   box-shadow: 0 0 10px 5px grey;
-  min-width: 46rem;
-  /* width: 60%; */
+  width: 20rem;
+
+ 
 }
 .cartItemBase:hover {
-  box-shadow: 0 0 10px var(--purple);
+  box-shadow: 0 0 10px purple;
 }
 
 .prdImage img {
@@ -57,7 +58,7 @@ select{
     outline: none;
     border: none;
     padding: 5px;
-    background: var(--bodybg);
+    background: wheat;
     border-radius: 0.5rem;
 }
 
