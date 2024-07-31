@@ -1,5 +1,4 @@
-.billBase {
-   
+.billBase {   
     display: flex;
     flex-direction: column;
     position:  sticky;

@@ -21,13 +21,12 @@ function Cart({ cartData }) {
       <h1>Cart</h1>
       <div className="cartBase">
         <div className="boughtItems">    
-          {cartData.map((item) => {
-            return <CartItem item={item} />;
+          {cartData.map((item, index) => {
+            return <CartItem key = {index} item={item} />;
           })}
         </div>
         <div className="bill">
-                <Bill totalMRP={totalMRP} count ={cartData.length}/>
-         
+                <Bill totalMRP={totalMRP} count ={cartData.length}/>         
         </div>
       </div>
     </>

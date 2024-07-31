@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import Logo from '../assets/react.svg'
 
 function Navbar({searchFunction}) {
-  // const [searchString, setSearchString] = useState('')
-  const searchString =useRef()
+  const [searchString, setSearchString] = useState('')
+  // const searchString =useRef()
 
-  const onSearchBtn = ()=>{
-    let string = searchString.current.value  
-    searchFunction(string)
-  }
+  // const onSearchBtn = ()=>{
+  //   let string = searchString.current.value  
+  //   searchFunction(string)
+  // }
 
 
 
@@ -24,8 +24,10 @@ function Navbar({searchFunction}) {
         </div>
 
         <div className="search">
-          <input type="text"  ref={searchString}/>
-          <button onClick={()=>{onSearchBtn()}}>Search</button>
+          <input type="text"  value={searchString} onChange={(e)=>{
+            setSearchString(e.target.value)
+            searchFunction(e.target.value)}}/>
+          {/* <button onClick={()=>{onSearchBtn()}}>Search</button> */}
         </div>
 
         <div className="options">
